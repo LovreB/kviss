@@ -1,17 +1,11 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Questions />
+  <CounterView />
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import CounterView from "./components/CounterView.vue";
+import Questions from "./components/Questions.vue";
 </script>
 
 <style>
@@ -22,5 +16,14 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background: #d6eadf;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+body {
+  margin: 0;
 }
 </style>
