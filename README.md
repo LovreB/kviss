@@ -2,6 +2,8 @@
 
 Welcome to our New-Years quiz App, where you can create your own quiz with an interactive scoreboard.
 
+Stack includes Vue3 and Typescript, built with Vite.
+
 ## Use the App
 
 Currently, the app is only to be run locally, where you have to type in your questions and team names. Do not reload the page, your state will disappear.
