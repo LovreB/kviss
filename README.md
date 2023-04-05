@@ -2,7 +2,7 @@
 
 Welcome to our New-Years quiz App, where you can create your own quiz with an interactive scoreboard.
 
-Stack includes Vue3 and Typescript, built with Vite.
+Stack includes Vue3 and Typescript, built with Vite. Still very much WIP, current version was built in about one hour just before the guests arrived :sweat-smile: 
 
 ## Use the App
 
