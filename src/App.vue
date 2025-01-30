@@ -1,6 +1,6 @@
 <template>
   <Questions />
-  <CounterView />
+  <!-- <CounterView /> -->
 </template>
 
 <script setup>
@@ -23,6 +23,7 @@ import Questions from "./components/Questions.vue";
   justify-content: space-between;
   flex-direction: column;
 }
+
 body {
   margin: 0;
 }
