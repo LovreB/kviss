@@ -1,9 +1,14 @@
 <template>
   <div class="wrapper">
+
+
     <div class="buttons">
       <div v-for="(question, index) in questions" :key="question" class="button"
         :class="{ active: selectedQuestion == index }" @click="selectedQuestion = index">
         {{ index + 1 }}
+      </div>
+      <div class="button" :class="{ active: selectedQuestion == -1 }" @click="selectedQuestion = -1">
+        <img :src="imageUrl" alt="Example Image" class="homeIcon">
       </div>
     </div>
     <div class="question">
@@ -22,6 +27,7 @@
 </template>
 
 <script setup>
+import imageUrl from '@/assets/home.png'; // Vue 3 (Vite/Webpack)
 import { ref } from "vue";
 import { johannaQuestions } from "../questions/johannaBirthday";
 
@@ -42,6 +48,10 @@ p {
   height: 100%
 }
 
+.homeIcon {
+  height: 1.25rem;
+}
+
 .question {
   display: flex;
   flex-direction: column;
@@ -53,7 +63,7 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .button {
@@ -61,8 +71,13 @@ p {
   background-color: #b8e0d2;
   padding: 0.5em 1em;
   border-radius: 1em;
-  font-size: 1em;
+  font-size: 1.25em;
   font-weight: bold;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  height: 1.75rem;
+  align-items: center;
 }
 
 .button:hover {
