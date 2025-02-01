@@ -1,12 +1,6 @@
 <template>
   <div class="wrapper">
-
-
     <div class="buttons">
-      <div v-for="(question, index) in questions" :key="question" class="button"
-        :class="{ active: selectedQuestion == index }" @click="selectedQuestion = index">
-        {{ index + 1 }}
-      </div>
       <div class="button" :class="{ active: selectedQuestion == -1 }" @click="selectedQuestion = -1">
         <img :src="imageUrl" alt="Example Image" class="homeIcon">
       </div>
@@ -21,7 +15,14 @@
       <template v-else>
         <h1>Den gemensamma nämnaren</h1>
         <h2><em> - Dagfalk Family Edition</em></h2>
+        <p>Vänta med till spelvärdarna säger till</p>
       </template>
+    </div>
+    <div class="buttons">
+      <div v-for="(question, index) in questions" :key="question" class="button"
+        :class="{ active: selectedQuestion == index }" @click="selectedQuestion = index">
+        {{ index + 1 }}
+      </div>
     </div>
   </div>
 </template>
@@ -42,7 +43,6 @@ p {
 
 .wrapper {
   padding: 1.5rem;
-  padding-bottom: 4.5rem;
   display: flex;
   flex-direction: column;
   height: 100%
@@ -63,7 +63,7 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .button {
@@ -73,7 +73,7 @@ p {
   border-radius: 1em;
   font-size: 1.25em;
   font-weight: bold;
-  width: 3rem;
+  width: 1.5rem;
   display: flex;
   justify-content: center;
   height: 1.75rem;
