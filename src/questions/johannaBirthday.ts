@@ -1,18 +1,18 @@
 export const johannaQuestions = [
   { t: "Är släkt med födelsedagsfirarna" },
-  { t: "Bor eller har bott i huddinge" },
   { t: "Har jobbat med någon av födelsedagsfirarna" },
+  { t: "Har barn" },
+
+  { t: "Är under 165 cm" },
   {
-    t: "Har gått i samma klass/skola/universitet som någon av födelsedagsfirarna",
+    t: "Har pluggat/gått i skolan tillsammans med någon av födelsedagsfirarna",
   },
-  { t: "Är under 160 cm" },
-  { t: "Är födda samma år som någon av födelsedagsfirarna" },
-  { t: "Är klädd i en specifik färg/Har något rött på sig" },
-  { t: "Har sett någon av födelsedagsfirarna nakna" },
-  { t: "Har känt något födelsedagsbarn i mer än 20 år" },
   { t: "Vilka har inte träffat någon av födelsedagsbarnen förrän ikväll?" },
+  { t: "Har en relation till båtlivet" },
   {
-    t: "Har efternamn som börjar på bokstaven D (som i Dagfalk)",
+    t: "Är födda samma år som någon av födelsedagsfirarna (1994, 1964 samt 1965)",
   },
+  { t: "Har något blått på sig" },
+
   { t: "Önskar födelsedagsfirarna en oförglömlig kväll" },
 ];
