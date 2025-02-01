@@ -15,7 +15,7 @@
       <template v-else>
         <h1>Den gemensamma nämnaren</h1>
         <h2><em> - Dagfalk Family Edition</em></h2>
-        <p>Vänta med till spelvärdarna säger till</p>
+        <p>Dags för lek! Vänta med att klicka på någon av knapparna tills spelledarna säger till.</p>
       </template>
     </div>
     <div class="buttons">
